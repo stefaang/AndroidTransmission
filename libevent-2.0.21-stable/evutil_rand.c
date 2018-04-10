@@ -150,10 +150,11 @@ evutil_secure_rng_get_bytes(void *buf, size_t n)
 	ev_arc4random_buf(buf, n);
 }
 
-void
-evutil_secure_rng_add_bytes(const char *buf, size_t n)
-{
-	arc4random_addrandom((unsigned char*)buf,
-	    n>(size_t)INT_MAX ? INT_MAX : (int)n);
-}
-
+#ifdef HAVE_ARC4RANDOM_ADDRANDOM
+ void
+ evutil_secure_rng_add_bytes(const char *buf, size_t n)
+ {
+    arc4random_addrandom((unsigned char*)buf,
+        n>(size_t)INT_MAX ? INT_MAX : (int)n);
+ }
+#endif

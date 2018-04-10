@@ -1,9 +1,9 @@
 /*
- * Automatically generated from /home/shenggang/workspace2/TransMissionBT/libevent-2.0.21-stable/test/regress.rpc
+ * Automatically generated from /home/stefaan/projects/AndroidTransmission/libevent-2.0.21-stable/test/regress.rpc
  */
 
-#ifndef __HOME_SHENGGANG_WORKSPACE2_TRANSMISSIONBT_LIBEVENT_2_0_21_STABLE_TEST_REGRESS_RPC_
-#define __HOME_SHENGGANG_WORKSPACE2_TRANSMISSIONBT_LIBEVENT_2_0_21_STABLE_TEST_REGRESS_RPC_
+#ifndef __HOME_STEFAAN_PROJECTS_ANDROIDTRANSMISSION_LIBEVENT_2_0_21_STABLE_TEST_REGRESS_RPC_
+#define __HOME_STEFAAN_PROJECTS_ANDROIDTRANSMISSION_LIBEVENT_2_0_21_STABLE_TEST_REGRESS_RPC_
 
 #include <event2/util.h> /* for ev_uint*_t */
 #include <event2/rpc.h>
@@ -204,4 +204,4 @@ int run_other_numbers_get(struct run *, int, ev_uint32_t *);
 ev_uint32_t * run_other_numbers_add(struct run *msg, const ev_uint32_t value);
 /* --- run done --- */
 
-#endif  /* __HOME_SHENGGANG_WORKSPACE2_TRANSMISSIONBT_LIBEVENT_2_0_21_STABLE_TEST_REGRESS_RPC_ */
+#endif  /* __HOME_STEFAAN_PROJECTS_ANDROIDTRANSMISSION_LIBEVENT_2_0_21_STABLE_TEST_REGRESS_RPC_ */
